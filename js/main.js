@@ -36,12 +36,12 @@ document.querySelector('#submit').addEventListener('focus', function(e) {
     current = anime({
         targets: 'path',
         strokeDashoffset: {
-            value: -730,
+            value: -70,
             duration: 700,
             easing: 'easeOutQuart'
         },
         strokeDasharray: {
-            value: '530 1386',
+            value: '53 1386',
             duration: 700,
             easing: 'easeOutQuart'
         }
