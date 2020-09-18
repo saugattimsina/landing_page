@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        .top-left a,
+        .top-right a,
+        .bottom-left a {
+            display: inline-block;
+            padding: 10px;
+            color: inherit;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        
+        [class^="ent-"],
+        [class*=" ent-"] {
+            display: inline;
+        }
+        
+        h5 {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: white;
+            font-family: "Sofia";
+            opacity: 1;
+        }
+        
+        .card-body {
+            text: white;
+            opacity: 0.2;
+        }
+        
+        p {
+            font-family: 'Tangerine', serif;
+            font-size: 48px;
+        }
+        
+        .top-left,
+        .top-right,
+        .bottom-left {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        body,
+        html {
+            min-height: 100%;
+            font-family: circular, 'segoe ui', sans-serif;
+            color: #444a50;
+        }
+        
+        section {
+            padding: 50px;
+            color: #2b2928;
+            position: fixed;
+        }
+        
+        section.wm {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(105vh);
+            min-width: calc(105vw);
+            color: white;
+            margin: -8px -9px;
+            canvas {
+                display: block;
+                animation: fadein 1s;
+                user-select: none;
+            }
+            .container {
+                max-width: 1500px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="wm" id="your-element-selector">
+
+        <div>
+            <b> <h5 class="card-title">Special title treatment</h5></b>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">HOME</a>
+            <a href="#" class="btn btn-primary">LOGIN</a>
+
+        </div>
+        <div class="top-left" style="z-index: 1;">
+            <img src="https://www.adazing.com/wp-content/uploads/2019/02/open-book-clipart-03.png" height="50px" width="50px">
+            <i class="ent-github"> </i>
+            </a>
+        </div>
+
+    </section>
+</body>
+<script src="three.r119.min.js"></script>
+<script src="vanta.halo.min.js"></script>
+<script>
+    VANTA.HALO({
+        el: "#your-element-selector",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00
+    })
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</html>
